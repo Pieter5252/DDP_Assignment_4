@@ -32,7 +32,7 @@ shinyServer(function(input, output) {
             ))
             lines(1:168, model2lines, col = "blue", lwd = 2)
         }
-        legend(25, 250, c("Model 1 Prediction", "Model 2 Prediction"), pch = 16, 
+        legend(100, 70, c("Model 1 Prediction", "Model 2 Prediction"), pch = 16, 
                col = c("red", "blue"), bty = "n", cex = 1.2)
         points(OzoneInput, model1pred(), col = "red", pch = 16, cex = 2)
         points(OzoneInput, model2pred(), col = "blue", pch = 16, cex = 2)
